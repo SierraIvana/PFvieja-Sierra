@@ -1,0 +1,602 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+
+body header div {
+    background-color: rgb(235, 206, 232);
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    height: 7rem;
+    width: 100%;
+    z-index: 10;
+    }
+
+.navbar-nav{
+    background-color: rgb(235, 206, 232);
+}
+
+.nav-a {
+    text-decoration: none;
+    color: rgb(177, 10, 155) !important;
+    }
+
+.logo-nav{
+    width:8rem;
+    height:6rem;
+    border-radius:  10px;
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(115, 87, 240) !important;
+    }
+
+
+/* MAIN INDEX*/
+.img-principal{
+    height:89vh;
+    background-image:url(../assets/img/imagenprincipal2.png);
+    background-position: left;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.img-principal .title{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+
+/* MAIN SOBRE NOSOTROS */
+
+.contenedor-presentacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(247, 240, 245);
+    height: 100vh;
+}
+
+.contenedor-presentacion
+.presentacion{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.6;
+
+}
+
+.contenedor-presentacion
+.presentacion p{
+    margin: 20px;
+}
+
+.img-presentacion{
+
+    height: 75vh;
+    padding:1rem 0;
+    border-radius:  100px;
+
+}
+
+
+
+/* MAIN SERVICIOS */
+
+
+.contenedor-servicios {
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 2fr 2fr;
+    height: 80vh;
+    padding: 2rem;
+    font-family: 'Playfair Display', serif;
+    grid-template-areas:
+    " servicios-h1 servicios-h1"
+    " item-servicios-1 item-servicios-2"
+
+}
+
+
+.servicios-h1{
+    grid-area: servicios-h1;
+    font-size: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.item-servicios-1{
+    grid-area: item-servicios-1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    padding: 2rem;
+
+}
+
+.item-servicios-1 h2{
+    font-size: 3rem;
+}
+
+
+.item-servicios-1 p{
+    font-size: 1.5rem;
+}
+
+
+
+.item-servicios-2{
+    grid-area: item-servicios-2;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.item-servicios-2 h2{
+    font-size: 3rem;
+}
+
+.item-servicios-2 p{
+    font-size: 1.5rem;
+}
+
+.servicios-foto{
+    width: 40rem;
+    border-radius:  1rem;
+}
+
+
+
+/* MAIN CARRITO */
+
+
+.contenedor-shop{
+
+    margin-left: 1rem;
+    font-family: 'Playfair Display', serif;
+    height: 200vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 2.5fr  4fr 4fr 4fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    column-gap: 0.5rem;
+    grid-template-areas:
+    "contenedor-shop-barra-lateral contenedor-shop-h1 contenedor-shop-h1 contenedor-shop-h1"
+    "contenedor-shop-barra-lateral contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 "
+    "contenedor-shop-barra-lateral item-cyb-1 item-cyb-1 item-cyb-1"
+    "contenedor-shop-barra-lateral contenedor-shop-ep-h2 contenedor-shop-ep-h2 contenedor-shop-ep-h2"
+    "contenedor-shop-barra-lateral item-ep-1 item-ep-2 item-ep-2"
+    "contenedor-shop-barra-lateral contenedor-shop-j-h2 contenedor-shop-j-h2 contenedor-shop-j-h2"
+    "contenedor-shop-barra-lateral item-j-1 item-j-2 item-j-3"
+    "contenedor-shop-barra-lateral contenedor-shop-p-h2 contenedor-shop-p-h2 contenedor-shop-p-h2"
+    "contenedor-shop-barra-lateral item-p-1 item-p-1 item-p-1"
+}
+
+.contenedor-shop-h1{
+    text-align: center;
+    grid-area: contenedor-shop-h1;
+    margin-top: 5rem;
+    font-weight: bold;
+    color: rgb(14, 18, 87);
+    font-size: xx-large;
+}
+
+.contenedor-shop-barra-lateral{
+    grid-area: contenedor-shop-barra-lateral;
+    border-right: #e9cfd4 4px solid;
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contenedor-shop-cyb-h2{
+    grid-area: contenedor-shop-cyb-h2;
+    margin-top: 3rem;
+    color: rgb(62, 7, 114);
+    font-weight: bold;
+}
+
+.item-cyb-1{
+    grid-area: item-cyb-1;
+}
+
+.contenedor-shop-ep-h2{
+    grid-area: contenedor-shop-ep-h2;
+    margin-top: 3rem;
+    color: rgb(62, 7, 114);
+    font-weight: bold;
+}
+.item-ep-1{
+    grid-area: item-ep-1;
+}
+
+.item-ep-2{
+    grid-area: item-ep-2;
+}
+
+.contenedor-shop-j-h2{
+
+    grid-area: contenedor-shop-j-h2;
+    margin-top: 3rem;
+    color: rgb(62, 7, 114);
+    font-weight: bold;
+}
+
+.item-j-1{
+    grid-area: item-j-1;
+}
+
+.item-j-2{
+    grid-area: item-j-2;
+}
+
+.item-j-3{
+    grid-area: item-j-3;
+}
+
+.contenedor-shop-p-h2{
+    grid-area: contenedor-shop-p-h2;
+    margin-top: 2rem;
+    color: rgb(62, 7, 114);
+    font-weight: bold;
+}
+
+.item-p-1{
+    grid-area: item-p-1;
+    margin-bottom: 2rem;
+
+}
+
+.img-cuadrada{
+    width: 10vw;
+}
+
+
+.shop h2{
+    height: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.shop h3{
+    height: 2rem;
+
+}
+
+.shop h4{
+    height: 2rem;
+
+}
+
+
+
+.elementos-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+
+.barra-lateral{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 2rem;
+    padding-right: 1rem;
+
+}
+
+.barra-lateral li{
+    text-decoration: none;
+    margin-top: 5rem;
+
+}
+
+.barra-lateral li a{
+    text-decoration: none;
+    color: rgb(136, 15, 120)
+}
+
+
+/* MAIN CONTACTO */
+
+
+.contenedor-contacto{
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.form-h1{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.contenedor-form{
+    background: white;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(136, 18, 120, 0.8);
+    margin: auto;
+}
+
+.form{
+    width: 50%;
+}
+form .grupo{
+    position: relative;
+    margin: 2rem;
+}
+
+form .grupo button{
+    background-color:  rgb(235, 206, 232);
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 1px rgba(136, 18, 120, 0.8);
+
+}
+
+form .grupo button:hover{
+   background-color:#d9a7c7;
+
+}
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 1.5rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: none;
+
+}
+
+/* fOOTER */
+footer {
+    background-color: rgb(235, 206, 232);
+    height: 4rem;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.instagram{
+    height: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+
+/* VISTA RESPONSIVE INDEX */
+
+@media screen and (max-width: 1155px) {
+    .img-principal{
+    background-image:url(../assets/img/imagenprincipal3.png);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+}
+
+/* VISTA RESPONSIVE SOBRE NOSOTROS */
+
+@media screen and (max-width: 800px) {
+    .contenedor-presentacion{
+
+        flex-wrap:nowrap;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        height: 100vh;
+}
+
+.contenedor-presentacion
+.presentacion{
+    font-size: 1.2rem;
+}
+
+.img-presentacion{
+
+    height: 60vh;
+
+}
+}
+
+@media screen and (max-width: 650px) {
+    .contenedor-presentacion{
+
+        height: 110vh;
+
+}
+
+
+
+.img-presentacion{
+
+    height: 55vh;
+
+}
+}
+
+@media screen and (max-width: 490px) {
+    .contenedor-presentacion{
+
+        height: 110vh;
+
+}
+
+
+
+.img-presentacion{
+
+    height: 40vh;
+
+}
+
+.contenedor-presentacion
+.presentacion p{
+    margin: 5px;
+}
+
+}
+
+/* VISTA RESPONSIVE SERVICIOS */
+
+@media screen and (max-width: 810px){
+    .contenedor-servicios {
+        display: grid;
+        grid-template-rows: 1fr 4fr 4fr;
+        grid-template-columns: 2fr;
+        height: 100%;
+        grid-template-areas:
+        " servicios-h1"
+        " item-servicios-1"
+        "item-servicios-2"
+
+    }
+    .servicios-foto {
+        width: 30rem;
+    }
+
+    .item-servicios-2{
+        grid-area: item-servicios-2;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .item-servicios-2 h2{
+        font-size: 3rem;
+    }
+
+    .item-servicios-2 p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .servicios-foto {
+        width: 20rem;
+    }
+}
+
+/* VISTA RESPONSIVE CARRITO*/
+
+@media screen and (max-width: 1400px){
+    .contenedor-shop{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-family: 'Playfair Display', serif;
+        height: 250vh;
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 2.5fr  4fr 4fr;
+        grid-template-rows: 1fr 0.5fr 3fr 0.5fr 3fr 0.5fr 3fr 3fr 0.5fr 3fr;
+        column-gap: 1rem;
+        grid-template-areas:
+        "contenedor-shop-barra-lateral contenedor-shop-h1 contenedor-shop-h1"
+        "contenedor-shop-barra-lateral contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 "
+        "contenedor-shop-barra-lateral item-cyb-1 item-cyb-1"
+        "contenedor-shop-barra-lateral contenedor-shop-ep-h2 contenedor-shop-ep-h2"
+        "contenedor-shop-barra-lateral item-ep-1 item-ep-2"
+        "contenedor-shop-barra-lateral contenedor-shop-j-h2 contenedor-shop-j-h2"
+        "contenedor-shop-barra-lateral item-j-1 item-j-2"
+        "contenedor-shop-barra-lateral item-j-3 item-j-3"
+        "contenedor-shop-barra-lateral contenedor-shop-p-h2 contenedor-shop-p-h2"
+        "contenedor-shop-barra-lateral item-p-1 item-p-1"
+    }
+    }
+    
+    @media screen and (max-width: 310px){
+        .contenedor-shop{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            font-family: 'Playfair Display', serif;
+            height: 250vh;
+            width: 95vw;
+            display: grid;
+            grid-template-columns: 2.5fr  4fr;
+            grid-template-rows: 1fr 0.5fr 3fr 0.5fr 3fr 3fr 0.5fr 3fr 3fr 3fr 0.5fr 3fr;
+            column-gap: 1rem;
+            grid-template-areas:
+            "contenedor-shop-barra-lateral contenedor-shop-h1"
+            "contenedor-shop-barra-lateral contenedor-shop-cyb-h2"
+            "contenedor-shop-barra-lateral item-cyb-1"
+            "contenedor-shop-barra-lateral contenedor-shop-ep-h2"
+            "contenedor-shop-barra-lateral item-ep-1"
+            "contenedor-shop-barra-lateral item-ep-2"
+            "contenedor-shop-barra-lateral contenedor-shop-j-h2"
+            "contenedor-shop-barra-lateral item-j-1"
+            "contenedor-shop-barra-lateral item-j-2"
+            "contenedor-shop-barra-lateral item-j-3"
+            "contenedor-shop-barra-lateral contenedor-shop-p-h2"
+            "contenedor-shop-barra-lateral item-p-1"
+        }
+    
+        .contenedor-shop-h1{
+            font-size: x-large;
+        }
+        }
+    
+        @media screen and (max-width: 400px){
+            .contenedor-contacto{
+                font-size:small;
+            }
+
+            .form{
+                width: 40%;
+            }
+
+            input, textarea{
+                font-size: 1rem;
+            }
+            }
+/*
