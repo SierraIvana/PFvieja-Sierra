@@ -1,0 +1,64 @@
+@import "../utilities/variables.scss";
+
+/* MAIN CONTACTO */
+
+
+.contenedor-contacto{
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: $fuente;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.form-h1{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.contenedor-form{
+    background: white;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(136, 18, 120, 0.8);
+    margin: auto;
+}
+
+.form{
+    width: 50%;
+    .grupo{
+        position: relative;
+        margin: 2rem;
+        button{
+            background-color:  rgb(235, 206, 232);
+            padding: 0.5rem;
+            font-weight: bold;
+            border-radius: 10px;
+            border: solid 1px rgba(136, 18, 120, 0.8);
+
+        }
+    }
+}
+.grupo button:hover{
+    background-color:rgb(235, 154, 228);
+}
+
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 1.5rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: none;
+
+}
