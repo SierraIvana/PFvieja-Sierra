@@ -1,0 +1,24 @@
+@import "../utilities/variables.scss";
+/* MAIN INDEX*/
+.img-principal{
+    height:89vh;
+    background-image:url(../assets/img/imagenprincipal2.png);
+    background-position: left;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+
+    .title{
+        font-family: $fuente;
+        color: $color-fuente-titulos;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
+        font-size: 3rem;
+    }
+
+}

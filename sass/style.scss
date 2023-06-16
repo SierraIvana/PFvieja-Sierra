@@ -1,0 +1,18 @@
+/* import reset */
+@import "./base/reset";
+/* import layouts */
+@import "./layouts/header";
+@import "./layouts/footer";
+/* import layouts/pages */
+@import "./views/home";
+@import "./views/contact";
+@import "./views/sobrenosotros";
+@import "./views/servicios";
+@import "./views/carrito";
+/* import vista responsive */
+@import "./vistaresponsive/responsive-index";
+@import "./vistaresponsive/responsive-sobrenosotros";
+@import "./vistaresponsive/responsive-servicios";
+@import "./vistaresponsive/responsive-carrito";
+
+

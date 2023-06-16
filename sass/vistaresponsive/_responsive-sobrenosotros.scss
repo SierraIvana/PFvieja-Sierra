@@ -1,0 +1,61 @@
+/* VISTA RESPONSIVE SOBRE NOSOTROS */
+
+@media screen and (max-width: 800px) {
+    .contenedor-presentacion{
+
+        flex-wrap:nowrap;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        height: 100vh;
+}
+
+.contenedor-presentacion
+.presentacion{
+    font-size: 1.2rem;
+}
+
+.img-presentacion{
+
+    height: 60vh;
+
+}
+}
+
+@media screen and (max-width: 650px) {
+    .contenedor-presentacion{
+
+        height: 110vh;
+
+}
+
+
+
+.img-presentacion{
+
+    height: 55vh;
+
+}
+}
+
+@media screen and (max-width: 490px) {
+    .contenedor-presentacion{
+
+        height: 110vh;
+
+}
+
+
+
+.img-presentacion{
+
+    height: 40vh;
+
+}
+
+.contenedor-presentacion
+.presentacion p{
+    margin: 5px;
+}
+
+}
