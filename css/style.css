@@ -75,16 +75,20 @@ footer {
 
 /* MAIN CONTACTO */
 .contenedor-contacto {
-  background: #d9a7c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d9a7c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Playfair Display", serif;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: large;
+  padding: 1rem;
 }
 
 .form-h1 {
@@ -120,7 +124,8 @@ footer {
   background-color: rgb(235, 154, 228);
 }
 
-input, textarea {
+input,
+textarea {
   background: none;
   color: #c6c6c6;
   font-size: 1.5rem;
@@ -182,14 +187,17 @@ input, textarea {
 
 /* MAIN SERVICIOS */
 .contenedor-servicios {
-  background: #d9a7c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d9a7c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: grid;
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 2fr 2fr;
   height: 80vh;
-  padding: 2rem;
+  padding: 1rem;
   font-family: "Playfair Display", serif;
   grid-template-areas: " servicios-h1 servicios-h1" " item-servicios-1 item-servicios-2";
 }
@@ -256,7 +264,7 @@ input, textarea {
   grid-template-columns: 2.5fr 4fr 4fr 4fr;
   grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
   column-gap: 0.5rem;
-  grid-template-areas: "contenedor-shop-barra-lateral contenedor-shop-h1 contenedor-shop-h1 contenedor-shop-h1" "contenedor-shop-barra-lateral contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 " "contenedor-shop-barra-lateral item-cyb-1 item-cyb-1 item-cyb-1" "contenedor-shop-barra-lateral contenedor-shop-ep-h2 contenedor-shop-ep-h2 contenedor-shop-ep-h2" "contenedor-shop-barra-lateral item-ep-1 item-ep-2 item-ep-2" "contenedor-shop-barra-lateral contenedor-shop-j-h2 contenedor-shop-j-h2 contenedor-shop-j-h2" "contenedor-shop-barra-lateral item-j-1 item-j-2 item-j-3" "contenedor-shop-barra-lateral contenedor-shop-p-h2 contenedor-shop-p-h2 contenedor-shop-p-h2" "contenedor-shop-barra-lateral item-p-1 item-p-1 item-p-1";
+  grid-template-areas: "contenedor-shop-barra-lateral contenedor-shop-h1 contenedor-shop-h1 contenedor-shop-h1" "contenedor-shop-barra-lateral contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 " "contenedor-shop-barra-lateral item-cyb-1 . ." "contenedor-shop-barra-lateral contenedor-shop-ep-h2 contenedor-shop-ep-h2 contenedor-shop-ep-h2" "contenedor-shop-barra-lateral item-ep-1 item-ep-2 ." "contenedor-shop-barra-lateral contenedor-shop-j-h2 contenedor-shop-j-h2 contenedor-shop-j-h2" "contenedor-shop-barra-lateral item-j-1 item-j-2 item-j-3" "contenedor-shop-barra-lateral contenedor-shop-p-h2 contenedor-shop-p-h2 contenedor-shop-p-h2" "contenedor-shop-barra-lateral item-p-1 . .";
 }
 
 .contenedor-shop-h1 {
@@ -271,9 +279,12 @@ input, textarea {
 .contenedor-shop-barra-lateral {
   grid-area: contenedor-shop-barra-lateral;
   border-right: #e9cfd4 4px solid;
-  background: #d9a7c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d9a7c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contenedor-shop-cyb-h2 {
@@ -356,7 +367,7 @@ input, textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .barra-lateral {
@@ -382,6 +393,19 @@ input, textarea {
 
 .transicion1:hover {
   width: 20vw;
+}
+
+.contenedor-shop article button {
+  background-color: rgb(235, 206, 232);
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: solid 1px rgba(136, 18, 120, 0.8);
+  font-size: 1.5rem;
+}
+
+.contenedor-shop article button:hover {
+  background-color: rgb(235, 154, 228);
 }
 
 /* import vista responsive */
@@ -430,11 +454,11 @@ input, textarea {
   }
 }
 /* VISTA RESPONSIVE SERVICIOS */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 900px) {
   .contenedor-servicios {
     display: grid;
-    grid-template-rows: 1fr 4fr 4fr;
-    grid-template-columns: 2fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-columns: 1fr;
     height: 100%;
     grid-template-areas: " servicios-h1" " item-servicios-1" "item-servicios-2";
   }
@@ -472,7 +496,10 @@ input, textarea {
     grid-template-columns: 2.5fr 4fr 4fr;
     grid-template-rows: 1fr 0.5fr 3fr 0.5fr 3fr 0.5fr 3fr 3fr 0.5fr 3fr;
     column-gap: 1rem;
-    grid-template-areas: "contenedor-shop-barra-lateral contenedor-shop-h1 contenedor-shop-h1" "contenedor-shop-barra-lateral contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 " "contenedor-shop-barra-lateral item-cyb-1 item-cyb-1" "contenedor-shop-barra-lateral contenedor-shop-ep-h2 contenedor-shop-ep-h2" "contenedor-shop-barra-lateral item-ep-1 item-ep-2" "contenedor-shop-barra-lateral contenedor-shop-j-h2 contenedor-shop-j-h2" "contenedor-shop-barra-lateral item-j-1 item-j-2" "contenedor-shop-barra-lateral item-j-3 item-j-3" "contenedor-shop-barra-lateral contenedor-shop-p-h2 contenedor-shop-p-h2" "contenedor-shop-barra-lateral item-p-1 item-p-1";
+    grid-template-areas: "contenedor-shop-barra-lateral contenedor-shop-h1 contenedor-shop-h1" "contenedor-shop-barra-lateral contenedor-shop-cyb-h2 contenedor-shop-cyb-h2 " "contenedor-shop-barra-lateral item-cyb-1 ." "contenedor-shop-barra-lateral contenedor-shop-ep-h2 contenedor-shop-ep-h2" "contenedor-shop-barra-lateral item-ep-1 item-ep-2" "contenedor-shop-barra-lateral contenedor-shop-j-h2 contenedor-shop-j-h2" "contenedor-shop-barra-lateral item-j-1 item-j-2" "contenedor-shop-barra-lateral item-j-3 ." "contenedor-shop-barra-lateral contenedor-shop-p-h2 contenedor-shop-p-h2" "contenedor-shop-barra-lateral item-p-1 .";
+  }
+  .contenedor-shop article button {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 310px) {
@@ -491,15 +518,19 @@ input, textarea {
   .contenedor-shop-h1 {
     font-size: x-large;
   }
+  .contenedor-shop article button {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .contenedor-contacto {
     font-size: small;
   }
   .form {
-    width: 40%;
+    width: 65%;
   }
-  input, textarea {
+  input,
+  textarea {
     font-size: 1rem;
   }
 }

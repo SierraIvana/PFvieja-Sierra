@@ -1,8 +1,7 @@
-
 @import "../utilities/variables.scss";
 /* MAIN SOBRE NOSOTROS */
 
-.contenedor-presentacion{
+.contenedor-presentacion {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -11,46 +10,44 @@
     background-color: rgb(247, 240, 245);
     height: 100vh;
 
-    .presentacion{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    font-family: $fuente;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.6;
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        font-family: $fuente;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.6;
 
-        p{
-    margin: 20px;
+        p {
+            margin: 20px;
         }
     }
 }
 
-.img-presentacion{
+.img-presentacion {
 
     height: 75vh;
-    padding:1rem 0;
-    border-radius:  100px;
+    padding: 1rem 0;
+    border-radius: 100px;
 
 }
 
-.carousel-indicators 
-.boton{
-    background-color:rgb(255, 20, 147);
+.carousel-indicators .boton {
+    background-color: rgb(255, 20, 147);
 }
-.d-block{
+
+.d-block {
     width: 100%;
 }
 
-.carousel-control-prev
-.boton{
-    background-color:rgb(255, 20, 147);
+.carousel-control-prev .boton {
+    background-color: rgb(255, 20, 147);
 }
 
-.carousel-control-next
-.boton{
-    background-color:rgb(255, 20, 147);
+.carousel-control-next .boton {
+    background-color: rgb(255, 20, 147);
 }
